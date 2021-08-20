@@ -1,0 +1,87 @@
+.nav_ul{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0!important; 
+    padding-left: 5%;
+    .active{
+        a{
+            text-decoration: none;
+            color:  $primary-color  !important;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 2px;
+            &:hover{
+                color:  $primary-color !important; 
+            }
+        }
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+        .nav_link_a{
+            text-decoration: none;
+            color:  black !important;
+            font-weight: bold;
+            font-size: $font-wr;
+            &:hover{
+                color:  $primary-color !important; 
+            }
+        }
+    }
+}
+.nav_fonts{
+    font-weight: bold;
+    .font_nav{
+        ul{
+            padding-left: 0px;
+            padding-right: 10px;
+            li{
+                font-size: $font-wr;
+                margin-right: 10px;
+                list-style: none;
+                display: inline-block;
+                a{
+                    position: relative;
+                    color: black;
+                    span {
+                        height: 13px;
+                        width: 13px;
+                        background: $primary-color ;
+                        font-size: 10px;
+                        color: #ffffff;
+                        line-height: 13px;
+                        text-align: center;
+                        font-weight: 700;
+                        display: inline-block;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        right: -12px;
+                    }
+                }
+            }
+        }}
+    .your_mony{
+        font-size: $font-icone;
+        p{
+            margin-bottom: 0px!important;
+        }
+    }
+    
+}
+.button {
+    background: $primary-color;
+    border-radius: 100px;
+    padding: 4px 0px;
+    text-decoration: none;
+    font-size: .9em;
+    a:hover{
+        background-color: transparent;
+    }
+  }
+  
+
+
+ 

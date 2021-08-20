@@ -1,0 +1,65 @@
+ //profile page
+
+ .profile-sales{
+    text-align: left!important;
+    h2:after{
+        margin: 0!important;
+        width:230px;
+    }
+}
+
+.store-sales{
+    text-align: left!important;
+    h2:after{
+        margin: 0!important;
+        width:125px;
+    }
+}
+.profile-your-product{
+  h2:after{
+      margin: 0!important;
+      width:285px;
+  }
+}
+
+.store-your-product{
+    h2:after{
+        margin: 0!important;
+        width:185px;
+    }
+  }
+
+.info-ul{
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+
+.profile_EditB{
+
+    width: 90px;
+    height: 30px;
+}
+
+.Edit-link{
+    color: white;
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+.add_to_sale{
+
+    width: 90px;
+    height: 30px;
+}
+
+.add-link{
+    color: white;
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+}
