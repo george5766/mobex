@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class ProductM extends Authenticatable implements JWTSubject
+class ProductM extends Model
 {
     use HasFactory;
 

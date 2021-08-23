@@ -24,5 +24,10 @@ Route::middleware(['api','checkpass'])->group(function () {
 //ad product
 Route::GET('ad', [App\Http\Controllers\MyApiController::class, 'r_ad']);
 Route::GET('offers', [App\Http\Controllers\MyApiController::class, 'r_offers']);
-Route::GET('newProduct', [App\Http\Controllers\MyApiController::class, 'new_product']);
+Route::GET('newProducts', [App\Http\Controllers\MyApiController::class, 'new_product']);
 Route::GET('products', [App\Http\Controllers\MyApiController::class, 'products']);
+
+Route::GET('login', [App\Http\Controllers\MyApiController::class, 'login']);
+
+Route::GET('purshase_orders', [App\Http\Controllers\MyApiController::class, 'purshase_orders']);
+

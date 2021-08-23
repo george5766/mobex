@@ -84,10 +84,11 @@
 
                             <div class="col-md-6">
                                     <select name="product_category" class="form-select">
-                                        <option value="name" selected>it</option>
-                                        <option value="category">phones</option>
-                                        <option value="price">kitchen</option>
-                                        <option value="price">furniture</option>
+                                        <option value="it" selected>it</option>
+                                        <option value="phones">phones</option>
+                                        <option value="ketchen">kitchen</option>
+                                        <option value="furniture">furniture</option>
+                                        <option value="clouth">clouth</option>
                                     </select>
                                 @error('product_category')
                                     <span class="invalid-feedback" role="alert">

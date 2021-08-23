@@ -44,7 +44,7 @@ class HomeController extends Controller
         $order_item= DB::select('select * from tempords r join product_m_s p join stores s on r.product_no = p.product_no and p.store_no = s.store_no where r.u_name = ?' , [auth()->user()->user_name]);
         $orders_count = count($order_item);
 
-
+       // dd($it_product);
         // my orders
         $myorders = DB::select('select * from order_items oi join product_m_s p join stores s join orders o on oi.product_no = p.product_no and p.store_no = s.store_no and o.order_no = oi.order_no and o.user_name = ?' , [auth()->user()->user_name]);
         $myorders_count = count($myorders);
@@ -61,6 +61,8 @@ class HomeController extends Controller
                 'order_count'=>$orders_count,
                 'myorders'=> $myorders,
                 'myorders_count'=>$myorders_count,
+                'it_products'=>$it_product,
+                'ketchen_products'=>$ketchen_product,
             ]);
 
 
@@ -100,7 +102,9 @@ class HomeController extends Controller
         $orders_count = count($order_item);
 
 
-        // my orders
+
+
+
         return view('home')->with([
             'products'=> $product,
             'it_products'=>$it_product,
@@ -112,6 +116,7 @@ class HomeController extends Controller
             'rates'=>$rate,
             'order_items'=>$order_item,
             'order_count'=>$orders_count,
+
             ]);
     }
 

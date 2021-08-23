@@ -23,6 +23,7 @@ class User extends Authenticatable implements JWTSubject
         'city',
         'address',
         'sex',
+        'token',
         'phone',
         'first_name',
         'middle_name',
@@ -32,6 +33,7 @@ class User extends Authenticatable implements JWTSubject
         'account_status',
         'profile_image',
         'balance',
+        
 
     ];
 

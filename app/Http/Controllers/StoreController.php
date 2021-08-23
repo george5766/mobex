@@ -43,9 +43,10 @@ class StoreController extends Controller
         $store =Store::class;
         $rate = DB::select('select rate , product_name from rates r join product_m_s p on r.product_no = p.product_no');        
         $followers_count  = count($follows);
-        $order_item= DB::select('select * from temporders r join product_m_s p join stores s on r.product_no = p.product_no and p.store_no = s.store_no');
         $product =  DB::select('select * from product_m_s');
 
+        $order_item= DB::select('select * from tempords r join product_m_s p join stores s on r.product_no = p.product_no and p.store_no = s.store_no where r.u_name = ?' , [auth()->user()->user_name]);
+        $orders_count = count($order_item);
         $orders_count = count($order_item);
         // my orders
         $myorders = DB::select('select * from order_items oi  join product_m_s p join stores s on oi.product_no = oi.product_no and p.store_no = s.store_no and s.user_name = ?' ,[auth()->user()->user_name]);

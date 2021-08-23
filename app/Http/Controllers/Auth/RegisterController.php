@@ -55,6 +55,7 @@ class RegisterController extends Controller
             'city' => ['required', 'string', 'max:255'],
             'address' => ['required', 'string', 'max:255'],
             'sex' => ['required', 'string', 'max:255'],
+            'token' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'string', 'min:10'],
             'first_name' => ['required', 'string'],
             'middle_name' => ['required', 'string'],
@@ -88,6 +89,7 @@ class RegisterController extends Controller
             'dateofbirth' => $data['dateofbirth'],
             'acount_status' => $data['acount_status'],
             'balance' => $data['balance'],
+            'token' => Str::random(16),
 ]);     
     }
 }
