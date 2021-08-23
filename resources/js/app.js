@@ -40,7 +40,7 @@ $(document).ready(function(){
     $('.profile-toprated-carusal').owlCarousel({
         items:1,
         autoplay:true,
-        loop:( $('.profile-salesof-owl .items').length > 4 ),
+        loop:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:1000,
@@ -51,7 +51,7 @@ $(document).ready(function(){
     $('.profile-salesof-owl').owlCarousel({
         items:4,
         autoplay:true,
-        loop:( $('.profile-salesof-owl .items').length > 4 ),
+        loop:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:1000,

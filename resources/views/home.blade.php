@@ -396,7 +396,7 @@
                 <div class="item">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" style="margin-left: 4rem !important;">
-                            <img src="images/1.jpg" alt="" class="featured__item__pic">
+                            <img src="images/3.jpg" alt="" class="featured__item__pic">
                         </div>
                         <div class="featured__item__text">
                             <h6><h1 >traning</h1></h6>
@@ -409,7 +409,7 @@
                 <div class="item">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" style="margin-left: 4rem !important;">
-                            <img src="images/1.jpg" alt="" class="featured__item__pic">
+                            <img src="images/2.jpg" alt="" class="featured__item__pic">
                         </div>
                         <div class="featured__item__text">
                             <h6><h1 >Happy customer</h1></h6>
